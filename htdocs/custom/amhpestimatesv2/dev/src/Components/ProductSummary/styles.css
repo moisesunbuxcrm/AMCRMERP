@@ -1,0 +1,22 @@
+.title_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+    flex-direction: column;
+    background: rgb(50, 68, 94);
+    color: white;
+}
+
+.context_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.table_text {
+    margin: 0;
+    padding: 0;
+}

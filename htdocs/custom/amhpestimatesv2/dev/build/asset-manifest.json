@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/AMCRMERP/htdocs/custom/amhpestimatesv2/dev/build/static/css/main.9da640d0.chunk.css",
+    "main.js": "/AMCRMERP/htdocs/custom/amhpestimatesv2/dev/build/static/js/main.c15f2b2e.chunk.js",
+    "main.js.map": "/AMCRMERP/htdocs/custom/amhpestimatesv2/dev/build/static/js/main.c15f2b2e.chunk.js.map",
+    "runtime-main.js": "/AMCRMERP/htdocs/custom/amhpestimatesv2/dev/build/static/js/runtime-main.8e097973.js",
+    "runtime-main.js.map": "/AMCRMERP/htdocs/custom/amhpestimatesv2/dev/build/static/js/runtime-main.8e097973.js.map",
+    "static/css/2.fe9d7ea1.chunk.css": "/AMCRMERP/htdocs/custom/amhpestimatesv2/dev/build/static/css/2.fe9d7ea1.chunk.css",
+    "static/js/2.46753654.chunk.js": "/AMCRMERP/htdocs/custom/amhpestimatesv2/dev/build/static/js/2.46753654.chunk.js",
+    "static/js/2.46753654.chunk.js.map": "/AMCRMERP/htdocs/custom/amhpestimatesv2/dev/build/static/js/2.46753654.chunk.js.map",
+    "index.html": "/AMCRMERP/htdocs/custom/amhpestimatesv2/dev/build/index.html",
+    "static/css/2.fe9d7ea1.chunk.css.map": "/AMCRMERP/htdocs/custom/amhpestimatesv2/dev/build/static/css/2.fe9d7ea1.chunk.css.map",
+    "static/css/main.9da640d0.chunk.css.map": "/AMCRMERP/htdocs/custom/amhpestimatesv2/dev/build/static/css/main.9da640d0.chunk.css.map",
+    "static/js/2.46753654.chunk.js.LICENSE.txt": "/AMCRMERP/htdocs/custom/amhpestimatesv2/dev/build/static/js/2.46753654.chunk.js.LICENSE.txt",
+    "static/media/logo.cbd6aea3.png": "/AMCRMERP/htdocs/custom/amhpestimatesv2/dev/build/static/media/logo.cbd6aea3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e097973.js",
+    "static/css/2.fe9d7ea1.chunk.css",
+    "static/js/2.46753654.chunk.js",
+    "static/css/main.9da640d0.chunk.css",
+    "static/js/main.c15f2b2e.chunk.js"
+  ]
+}

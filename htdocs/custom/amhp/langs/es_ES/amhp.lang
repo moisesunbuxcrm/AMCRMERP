@@ -1,0 +1,86 @@
+#
+# Generic
+#
+
+# Module label 'AMHPName'
+AMHPName = A&M Hurricane Protection
+# Module description 'AMHPDesc'
+AMHPDesc = Ese modulo agrega algunas customizaciones en Dolibarr para A&M Hurricane Protection
+AMHPFamily = A&M Hurricane Protection
+
+#
+# Permissions
+#
+AMHPRightsReadBuildDepts = Ver departamentos de construcción
+AMHPRightsUpdateBuildDepts = Cambiar departamentos de construcción
+
+#
+# Admin page
+#
+AMHPSetup = A & M Hurricane Protection configuración
+Settings = Configuración
+AMHPSetupPage = A & M Hurricane Protection página de configuración
+
+#
+# About page
+#
+About = Sobre
+AMHPAbout = Sobre AMHP
+AMHPAboutPage = Ese modulo agrega algunas customizaciones en Dolibarr para A&M Hurricane Protection
+
+#
+# Widget
+#
+AMHPEstimatesWidgetName = Estimaciones AMHP
+AMHPEstimatesWidgetNote = Widget por  AMHP para Estimaciones
+AMHPEstimatesWidgetDescription = Estimaciones activas
+AMHPEstimatesMenuName = Estimaciones
+
+#
+# Estimates Area
+#
+AHMPEstimatesArea = Estimaciones
+
+#
+# Third Parties
+#
+AMHPListOfBuildingDepartmentsMenuName = Lista de departamentos de construcción
+AMHPNewBuildingDepartmentMenuName = Nuevo departamento de construcción
+
+#
+# List of building departments
+#
+AHMPBuildDeptsArea = Departamentos de construcción
+AMHPListOfBuildingDepartmentsPageHeading = Lista de departamentos de construcción
+AMHPBuildingDepartmentDeleted = Departamento de construcción eliminado
+AMHPDeleteBuildingDepartment = Eliminar departamento de construcción
+AMHPConfirmDeleteBuildingDepartment = ¿Está seguro de querer eliminar esta departamentos de construcción y toda su información inherente?
+AMHPCityName = Nombre de ciudad
+AMHPCounty = Condado
+AMHPCityCode = Código de ciudad
+AMHPBuildingDepartmentName = Departamento de construcción
+AMHPPropSearch = URL para buscar propiedad
+AMHPBuildingDepartmentPageTitle = Departamento de construcción
+AMHPNewBuildingDepartmentPageHeading = Nuevo departamento de construcción
+AMHPWorkingHours = Horas de trabajo
+AMHPAddBuildingDepartment = Crear departamento
+AMHPEditBuildingDepartmentPageTitle = Modificar departamento de construcción
+AMHPViewBuildingDepartmentPageHeading = Departamento de construcción
+
+#
+# Agenda
+#
+AMHPAgendaLeftMenuName=AMHP
+AMHPPendingEstimatesMenuName=Estimaciones Pendientes
+AMHPScheduledInstallationsMenuName=Instalaciones Programadas
+AMHPImpactInstallationsMenuName=Instalaciones IMPACT Programadas
+AMHPShutterInstallationsMenuName=Instalaciones SHUTTER Programadas
+AMHPInspectionsMenuName=Inspecciones
+AMHPServicesMenuName=SERVICIOS AGENDADOS
+AMHPServicesPendingMenuName=SERVICIOS PENDIENTES
+AMHPRemeasurmentsMenuName=Remeasurements
+
+#
+# Dolibarr re-definitions
+#
+Connection=Login

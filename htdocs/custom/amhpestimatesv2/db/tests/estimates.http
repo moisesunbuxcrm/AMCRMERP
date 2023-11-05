@@ -1,0 +1,93 @@
+# This file contains contains HTTP requests for testing CRUD operations for estimations
+# Install the Visual Studio Code extension to use it: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+# The PHP files need a login so you need to add authentication to these tests or add these lines to the top of each file
+# // Temporarily remove security for testing new estimates app
+# define('NOREQUIREUSER','1');
+# define('NOLOGIN','1');
+
+@apiRoot=http://localhost/AMCRMERP/htdocs/custom/amhpestimatesv2/db
+
+### Create an estimate
+
+POST {{apiRoot}}/createEstimate.php
+Content-Type: application/x-www-form-urlencoded
+
+estimatenum=E00003
+&quotedate=2021-05-06 02:50:00
+&customerid=1070
+&folio=04-3117-016-0341
+&deposit_percent=50
+&deposit_percent_with_install=40
+&percent_final_inspection=10
+&warranty_years=10
+&pay_upon_completion=false
+&new_construction_owner_responsability=false
+&status="PENDING"
+&status_reason=""
+&approved_date=
+&rejected_date=
+&delivered_date=
+&permitId=76
+&vendor="Paul Dermody"
+&vendor_phone="123 456 7890"
+&defcolor=WHITE
+&defglasscolor=WHITE
+&is_alteration=false
+&is_installation_included=false
+&add_sales_discount=0.15
+&add_inst_discount=0.2
+&permits=400
+&salestax=25.00
+&totalprice=1000
+&notes=This client is high priority
+&public_notes=This estimate is valid for 10 days
+
+### fetch an estimate
+GET {{apiRoot}}/getEstimate.php?id=100
+
+### Delete an estimate
+GET {{apiRoot}}/deleteEstimate.php?id=107
+
+### Update an estimate
+POST {{apiRoot}}/updateEstimate.php
+Content-Type: application/x-www-form-urlencoded
+
+id=69
+&estimatenum=E00053
+&quotedate=2021-05-06 02:50:02
+&customerid=1072
+&folio=04-3117-016-0342
+&deposit_percent=51
+&deposit_percent_with_install=41
+&percent_final_inspection=11
+&warranty_years=11
+&pay_upon_completion=true
+&new_construction_owner_responsability=true
+&status="APPROVED"
+&status_reason=""
+&approved_date=2021-05-06 02:50:02
+&rejected_date=2021-05-06 02:50:02
+&delivered_date=2021-05-06 02:50:02
+&permitId=76
+&vendor="Paul Dermody2"
+&vendor_phone="123 456 7890"
+&defcolor=yellow
+&defglasscolor=yellow
+&is_alteration=true
+&is_installation_included=true
+&add_sales_discount=0.16
+&add_inst_discount=0.3
+&permits=500
+&salestax=26.00
+&totalprice=1001
+&notes=This client is medium priority
+&public_notes=This estimate is valid for 11 days
+
+### Copy an estimate
+POST {{apiRoot}}/copyEstimate.php
+Content-Type: application/x-www-form-urlencoded
+
+id=69
+
+###

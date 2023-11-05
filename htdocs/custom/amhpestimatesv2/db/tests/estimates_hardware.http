@@ -1,0 +1,72 @@
+# This file contains contains HTTP requests for testing CRUD operations for estimations
+# Install the Visual Studio Code extension to use it: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+@apiRoot=http://localhost/AMCRMERP/htdocs/custom/amhpestimatesv2/db
+
+### fetch an estimate
+GET {{apiRoot}}/getEstimateHardware.php?id=3
+
+
+### Create an hardware product
+
+POST {{apiRoot}}/createEstimateHardware.php
+Content-Type: application/x-www-form-urlencoded
+
+estimateid=54
+&itemno=1
+&itemtype=Hardware
+&modtype=Hardware
+&wintype=Horizontal Rolling Series
+&name=ECO 36 3/4 X 25 3/4 BRONZE/BRONZE CLEAR INTERLAYER
+&image=http%3A%2F%2Flocalhost%2FAMCRMERP%2Fhtdocs%2Fdocument.php%3Fmodulepart%3Dproduct%26attachment%3D0%26file%3D36.75X50.375HRXOECOBB5.16C%2F36.75X50.375.png
+&color=white
+&cost_price=80
+&sales_price=100
+&sales_discount=0.10
+&inst_price=25
+&inst_discount=0.10
+&otherfees=15
+&finalprice=127.5
+&quantity=1
+&provider=ECO WINDOWS
+&product_ref=105.75X25.75HRXOECOBB5.16W
+&hardwaretype=Horizontal Rolling
+&configuration=XOX
+
+
+### Delete an estimate
+GET {{apiRoot}}/deleteEstimateHardware.php?id=1
+
+### Update an estimate
+POST {{apiRoot}}/updateEstimateHardware.php
+Content-Type: application/x-www-form-urlencoded
+
+id=2
+&estimateitemid=54
+&itemno=4
+&itemtype=Hardware
+&modtype=Hardware
+&wintype=Horizontal Rolling Series
+&name=Eco window 105.75x25.75HRXOECOBB5.16C Test
+&image=http%3A%2F%2Flocalhost%2FAMCRMERP%2Fhtdocs%2Fdocument.php%3Fmodulepart%3Dproduct%26attachment%3D0%26file%3D36.75X50.375HRXOECOBB5.16C%2F36.75X50.375.png
+&color=white3
+&cost_price=803
+&sales_price=1003
+&sales_discount=0.103
+&inst_price=253
+&inst_discount=0.103
+&otherfees=153
+&finalprice=127.53
+&quantity=1
+&provider=ECO WINDOWS3
+&product_ref=105.75X25.75HRXOECOBB5.16W3
+&hardwaretype=Horizontal Rolling4
+&configuration=XOX3
+
+### Copy an estimate
+POST {{apiRoot}}/copyEstimateHardware.php
+Content-Type: application/x-www-form-urlencoded
+
+id=2
+
+###

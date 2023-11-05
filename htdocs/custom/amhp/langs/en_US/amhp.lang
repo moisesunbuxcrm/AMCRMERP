@@ -1,0 +1,88 @@
+#
+# Generic
+#
+
+# Module label 'AMHPName'
+AMHPName = A&M Hurricane Protection
+# Module description 'AMHPDesc'
+AMHPDesc = This module adds some customizations to Dolibarr for use in A&M Hurricane Protection
+AMHPFamily = A&M Hurricane Protection
+
+#
+# Permissions
+#
+AMHPRightsReadBuildDepts = Read building departments
+AMHPRightsUpdateBuildDepts = Modify building departments
+
+#
+# Admin page
+#
+AMHPSetup = A & M Hurricane Protection setup
+Settings = Settings
+AMHPSetupPage = A & M Hurricane Protection setup page
+
+#
+# About page
+#
+About = About
+AMHPAbout = About AMHP
+AMHPAboutPage = This module adds some customizations to Dolibarr for use in A&M Hurricane Protection
+
+#
+# Widget
+#
+AMHPEstimatesWidgetName = AMHP Estimates
+AMHPEstimatesWidgetNote = Widget provided by AMHP for Estimates
+AMHPEstimatesWidgetDescription = Active estimates
+AMHPEstimatesMenuName = Estimates
+
+#
+# Estimates Area
+#
+AHMPEstimatesArea = Estimates
+
+#
+# Third Parties
+#
+AMHPListOfBuildingDepartmentsMenuName = List of building departments
+AMHPNewBuildingDepartmentMenuName = New building department
+
+#
+# Building departments
+#
+AHMPBuildDeptsArea = Building departments
+AMHPListOfBuildingDepartmentsPageHeading = List of building departments
+AMHPBuildingDepartmentDeleted = Building department deleted
+AMHPDeleteBuildingDepartment = Delete building department
+AMHPConfirmDeleteBuildingDepartment =  Are you sure you want to delete this building departments and all inherited information?
+AMHPCityName = City name
+AMHPCounty = County
+AMHPCityCode = City code
+AMHPBuildingDepartmentName = Building department
+AMHPPropSearch = Property search URL
+AMHPBuildingDepartmentPageTitle = Building department
+AMHPNewBuildingDepartmentPageHeading = New building department
+AMHPWorkingHours = Working hours
+AMHPAddBuildingDepartment = Create department
+AMHPEditBuildingDepartmentPageHeading = Edit building department
+AMHPViewBuildingDepartmentPageHeading = Building department
+
+#
+# Agenda
+#
+AMHPAgendaLeftMenuName=AMHP
+AMHPPendingEstimatesMenuName=Estimates
+AMHPPermitsMenuName=Permits
+AMHPScheduledInstallationsMenuName=Installations
+AMHPImpactInstallationsMenuName=IMPACT Installations
+AMHPShutterInstallationsMenuName=SHUTTER Installations
+AMHPInspectionsMenuName=Inspections
+AMHPServicesMenuName=SERVICES SCHEDULED
+AMHPServicesPendingMenuName=SERVICES PENDING
+AMHPRemeasurmentsMenuName=Remeasurements
+
+
+#
+# Dolibarr re-definitions
+#
+Connection=Login

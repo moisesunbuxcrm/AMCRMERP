@@ -1,0 +1,51 @@
+#
+# Generic
+#
+
+# Module label 'AMHPESTIMATESName'
+AMHPESTIMATESName = A&M Estimates
+# Module description 'AMHPESTIMATESDesc'
+AMHPESTIMATESDesc = This module adds an estimates feature to Dolibarr for use in A&M Hurricane Protection
+AMHPESTIMATESFamily = A&M Hurricane Protection
+
+#
+# Permissions
+#
+AMHPESTIMATESRightsReadEstimates = Read estimates
+AMHPESTIMATESRightsUseEstimates = Use AMHPESTIMATES Estimates Tool
+AMHPESTIMATESRightsReadBuildDepts = Read building departments
+AMHPESTIMATESRightsUpdateBuildDepts = Modify building departments
+
+#
+# Admin page
+#
+AMHPESTIMATESSetup = A & M Estimates setup
+Settings = Settings
+AMHPESTIMATESSetupPage = A & M Estimates setup page
+
+#
+# About page
+#
+About = About
+AMHPESTIMATESAbout = About AMHPESTIMATES
+AMHPESTIMATESAboutPage = This module adds an estimates feature to Dolibarr for use in A&M Hurricane Protection
+
+#
+# Estimates Area
+#
+AHMPEstimatesArea = Estimates
+AMHPESTIMATESMenuName = Estimates
+
+AMHPESTIMATESListOfPOsPageHeading = Estimates List
+AMHPESTIMATESPODeleted = Production order deleted
+AMHPESTIMATESNewPOMenuName = New Estimate
+AMHPESTIMATESListOfPOsMenuName = List Estimates
+AMHPAddEstimate = Add new estimate
+AMHPEstmatesForThisThirdParty = Estimates for this third party
+
+#
+# Widget
+#
+AMHPEstimatesWidgetName = AMHP Estimates
+AMHPEstimatesWidgetNote = Widget provided by AMHP for Estimates
+AMHPEstimatesWidgetDescription = Latest estimates

@@ -1,0 +1,113 @@
+# This file contains contains HTTP requests for testing CRUD operations for estimations
+# Install the Visual Studio Code extension to use it: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+@apiRoot=http://localhost/AMCRMERP/htdocs/custom/amhpestimatesv2/db
+
+### fetch an estimate
+GET {{apiRoot}}/getEstimateImpactProduct.php?id=23
+
+
+### Create an impact product
+
+POST {{apiRoot}}/createEstimateImpactProduct.php
+Content-Type: application/x-www-form-urlencoded
+
+estimateid=69
+&itemno=1
+&itemtype=Window
+&modtype=Impact Product
+&wintype=Horizontal Rolling Series
+&name=ECO 36 3/4 X 25 3/4 BRONZE/BRONZE CLEAR INTERLAYER
+&image=http%3A%2F%2Flocalhost%2FAMCRMERP%2Fhtdocs%2Fdocument.php%3Fmodulepart%3Dproduct%26attachment%3D0%26file%3D36.75X50.375HRXOECOBB5.16C%2F36.75X50.375.png
+&color=white
+&cost_price=80
+&sales_price=100
+&sales_discount=0.10
+&inst_price=25
+&inst_discount=0.10
+&otherfees=15
+&finalprice=127.5
+&quantity=1
+&provider=ECO WINDOWS
+&is_def_color=false
+&is_def_glass_color=false
+&is_standard=false
+&roomtype=1
+&roomnum=1
+&floornum=1
+&product_ref=105.75X25.75HRXOECOBB5.16W
+&configuration=XOX
+&is_screen=false
+&frame_color=white
+&is_colonial=false
+&colonial_fee=0
+&colonial_across=0
+&colonial_down=0
+&width=70
+&widthtxt=70
+&height=70
+&heighttxt=70
+&length=5
+&lengthtxt=5
+&glass_type=Laminated
+&glass_color=BRONZE
+&interlayer=WHITE
+&coating=NONE
+&room_description=Main Bedroom
+
+
+### Delete an estimate
+GET {{apiRoot}}/deleteEstimateImpactProduct.php?id=18
+
+### Update an estimate
+POST {{apiRoot}}/updateEstimateImpactProduct.php
+Content-Type: application/x-www-form-urlencoded
+
+id=19
+&estimateitemid=36
+&itemno=4
+&itemtype=Window
+&modtype=Impact Product
+&wintype=Horizontal Rolling Series
+&name=Eco window 105.75x25.75HRXOECOBB5.16C
+&image=http%3A%2F%2Flocalhost%2FAMCRMERP%2Fhtdocs%2Fdocument.php%3Fmodulepart%3Dproduct%26attachment%3D0%26file%3D36.75X50.375HRXOECOBB5.16C%2F36.75X50.375.png
+&color=white3
+&cost_price=803
+&sales_price=1003
+&sales_discount=0.103
+&inst_price=253
+&inst_discount=0.103
+&otherfees=153
+&finalprice=127.53
+&quantity=1
+&provider=ECO WINDOWS3
+&is_def_color=true
+&is_def_glass_color=true
+&is_standard=true
+&roomtype=3
+&roomnum=13
+&floornum=1
+&product_ref=105.75X25.75HRXOECOBB5.16W3
+&configuration=XOX3
+&is_screen=true
+&frame_color=white3
+&is_colonial=true
+&colonial_fee=3
+&colonial_across=3
+&colonial_down=3
+&width=703
+&height=703
+&length=5
+&glass_type=Laminated3
+&glass_color=BRONZE3
+&interlayer=WHITE3
+&coating=NONE3
+&room_description=Main Bedroom2
+
+### Copy an estimate
+POST {{apiRoot}}/copyEstimateImpactProduct.php
+Content-Type: application/x-www-form-urlencoded
+
+id=2
+
+###

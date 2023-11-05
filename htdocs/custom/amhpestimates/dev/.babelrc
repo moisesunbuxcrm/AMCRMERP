@@ -1,0 +1,4 @@
+{
+  "presets": [["env", {"exclude": ["transform-regenerator"]}],"react"],
+  "plugins": ["transform-regenerator","transform-class-properties","transform-decorators-legacy"]
+}

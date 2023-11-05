@@ -1,0 +1,386 @@
+@keyframes animateShow {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes animateHiden {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+.impact, .hardware, .material, .design, .home {
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 90%;
+    padding: 30px 0;
+}
+
+.input_colonial {
+    margin-right: 15px;
+}
+
+.input_text {
+    margin: 0 15px;
+}
+
+.block_space {
+    margin: 20px 0;
+}
+
+.estimateContainer,
+.impactContainer,
+.hardwareContainer,
+.materialContainer,
+.designContainer {
+    padding: 15px 15px 0px 15px;
+}
+
+.flex_container_center {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.flex_container_end {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.button {
+    width: 50%;
+    border: none;
+}
+
+.flex_container {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+}
+
+.show1 {
+    opacity: 1;
+    animation: animateShow 0.3s linear;
+}
+
+.show2 {
+    opacity: 1;
+    animation: animateShow 0.7s linear;
+}
+
+.show3 {
+    opacity: 1;
+    animation: animateShow 1s linear;
+}
+
+.show4 {
+    opacity: 1;
+    animation: animateShow 1.2s linear;
+}
+
+.hide {
+    opacity: 0;
+    animation: animateHiden 0.5s linear;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+
+.ant-select-show-search.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-radius: 8px;
+    height: 2rem;
+}
+
+.show1 .ant-select-arrow {
+    top: 32%
+}
+
+.ant-select {
+    font-size: 18px;
+}
+
+.ant-divider-horizontal {
+    background-color: rgba(50,68,94, 0.5);
+}
+
+.ant-input[disabled],
+.ant-input-number-input[disabled] {
+    background-color: rgba(244,245,245, 0.2); 
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.ant-ribbon-text {
+    color: rgb(50, 68, 94);
+}
+
+.ant-upload-picture-card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ant-input-number-input-wrap input {
+    margin: .2em 0em;
+}
+
+.ant-form-item {
+    margin-bottom: 0px
+}
+
+#product-search .ant-select.input {
+    margin-bottom: 0px
+}
+
+body .estimatesv2 .show-on-print {
+    display: none
+}
+
+/* ------------ print-estimate ----------------- */
+body .estimatesv2 .print-estimate  .hide-on-print,
+body .estimatesv2 .print-estimate  .ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow,
+body .estimatesv2 .print-estimate  .anticon.anticon-edit,
+body .estimatesv2 .print-estimate  .ant-ribbon,
+body .estimatesv2 .print-estimate  .ant-select-arrow,
+body .estimatesv2 .print-estimate #add-save-buttons,
+body .estimatesv2 .print-estimate button.ant-btn-round,
+body .estimatesv2 .print-estimate  .ant-image-mask
+{
+    display: none;
+}
+
+body .estimatesv2 .print-estimate  .show-on-print {
+    display: inline-flex
+}
+
+body .estimatesv2 .print-estimate  {
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 90%;
+    padding: 30px 0px 0px 0px;
+}
+
+body .estimatesv2 .print-estimate  .ant-checkbox-inner {
+    border: none;
+}
+
+body .estimatesv2 .print-estimate  .item-summary {
+    page-break-inside: avoid;
+}
+
+body .estimatesv2 .item-summary .ant-collapse-header {
+    align-items: center;
+}
+
+body .estimatesv2 .print-estimate .ant-collapse>.ant-collapse-item {
+    border: 0px;
+}
+
+body .estimatesv2 .print-estimate .item-summary .ant-collapse-header {
+    border: 1px solid black;
+}
+
+body .estimatesv2 .item-summary .item-summary-header {
+    display:flex;
+    width:75%;
+}
+
+body .estimatesv2 .item-summary .item-summary-header .product-title {
+    flex-grow:60;
+}
+
+body .estimatesv2 .item-summary .item-summary-header .product-price {
+    flex-grow:40;
+    text-align:end;
+}
+
+body .estimatesv2 .print-estimate .item-summary-header {
+    width:100%;
+}
+
+body .estimatesv2 .print-estimate .ant-typography h5, 
+body .estimatesv2 .print-estimate h5.ant-typography {
+    margin-bottom: 0em;
+    line-height: 1.5;
+}
+
+body .estimatesv2 .print-estimate .ant-input {
+    padding: 2px 5px;
+    border-radius: 1px;
+    margin-bottom: 10px;
+    height: 2.5em;
+    font-size: 15px;
+}
+
+body .estimatesv2 .print-estimate .ant-collapse {
+    border-radius: 1px;
+}
+
+body .estimatesv2 .print-estimate  .ant-collapse .ant-collapse-header {
+    padding: 6px 7px 6px 15px;
+    font-size: 15px;
+}
+
+body .estimatesv2 .print-estimate  .ant-checkbox-input {
+    opacity: 1;
+}
+
+body .estimatesv2 .print-estimate  .ant-input[disabled],
+body .estimatesv2 .print-estimate  .ant-input-disabled {
+    color: black;
+    background-color: white; 
+}
+
+body .estimatesv2 .print-estimate  .totals-table table {
+    page-break-inside: avoid;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+body .estimatesv2 .print-estimate  .customer-info .ant-col-xs-24,
+body .estimatesv2 .print-estimate  .customer-info .ant-col-sm-24 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+body .estimatesv2 .print-estimate  .customer-info .ant-table
+{
+    line-height: 1.4;
+} 
+
+body .estimatesv2 .print-estimate  .customer-info .ant-table .table-row-customername {
+    background-color: #c5def3;
+}
+
+body .estimatesv2 .customer-info .ant-table-tbody > tr.ant-table-row:hover > td {
+    background: unset;
+}
+
+body .estimatesv2 .print-estimate  .item-summary .ant-col-xs-24,
+body .estimatesv2 .print-estimate  .item-summary .ant-col-sm-24 {
+    flex: 10%;
+}
+
+body .estimatesv2 .print-estimate .ant-divider-horizontal {
+    background-color: black;
+    margin: .5em 0em 1em 0em;
+}
+
+body .estimatesv2 .print-estimate .ant-typography {
+    color: black;
+    overflow-wrap: break-word;
+}
+
+body .estimatesv2 .ant-table.ant-table-small .ant-table-tbody > tr > td {
+    font-size: "16px";
+    vertical-align: top;
+    padding: 0px 4px;
+    white-space: pre;
+    line-height: 1.3em;
+}
+
+body .estimatesv2 .ant-table.ant-table-small .ant-table-tbody > tr > td.CCDValue {
+    text-transform: uppercase;
+}
+
+body .estimatesv2 .ant-table-tbody > tr > td {
+    border-bottom: 0px;
+} 
+
+body .estimatesv2 .print-estimate .invoice-totals-table table {
+    page-break-inside: avoid;
+    font-size: 22px
+}
+
+body .estimatesv2 .signature-title-cell,
+body .estimatesv2 .signature-name-cell {
+    margin-top: 6em;
+    white-space: nowrap;
+}
+
+body .estimatesv2 .signature-title-text,
+body .estimatesv2 .signature-name-text {
+    border-top: 1px solid black;
+}
+
+body .estimatesv2 .signature-title-text {
+    font-weight: bold;
+}
+
+body .estimatesv2 .signature-name-text {
+    width: 95%;
+    text-transform: uppercase;
+    padding-left: .5em;
+}
+
+body .estimatesv2 .print-estimate .ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    color: black;
+}
+
+body .estimatesv2 .print-estimate .ant-checkbox-disabled .ant-checkbox-input {
+    opacity:0;
+}
+
+body .estimatesv2 .print-estimate  {
+    padding: 0px;
+}
+
+@media print {
+    body .estimatesv2 .print-estimate .side-nav-vert,
+    body .estimatesv2 .print-estimate .side-nav {
+        display: none;
+    }
+    
+    body .estimatesv2 .print-estimate  .hide-on-print-only,
+    body .estimatesv2 .print-estimate  .expand-collapse-buttons {
+        display: none;
+    }
+    
+    body .estimatesv2 .print-estimate .item-summary .product-component .title_container {
+        color: black;
+        font-weight: bold;
+    }
+    
+    body .estimatesv2 .print-estimate .item-summary .ant-collapse-header {
+        border: 1px solid black;
+    }
+
+    body .estimatesv2 .print-estimate  {
+        margin: 0px;
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media print, (min-width: 768px) {
+.ant-col-md-12 {
+    display: block;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}

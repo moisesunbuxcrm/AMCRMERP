@@ -1,0 +1,14 @@
+/*
+This file configures Visual Studio Code to not complain about decorators
+*/
+{
+  "compilerOptions": {
+      "experimentalDecorators": true,
+      "target": "es2015",
+      "module": "commonjs"
+    },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*"
+  ]
+}

@@ -1,0 +1,90 @@
+# This file contains contains HTTP requests for testing CRUD operations for estimation items
+# Install the Visual Studio Code extension to use it: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+# The PHP files need a login so you need to add authentication to these tests or add these lines to the top of each file
+# The following two lines temporarily remove authentication security for testing new estimates app
+# define('NOREQUIREUSER','1');
+# define('NOLOGIN','1');
+
+@apiRoot=http://localhost/AMCRMERP/htdocs/custom/amhpestimatesv2/db
+
+### fetch an estimate item
+GET {{apiRoot}}/getEstimateLineItem.php?id=2
+
+### Create an estimate item
+
+POST {{apiRoot}}/createEstimateLineItem.php
+Content-Type: application/x-www-form-urlencoded
+
+estimateid=54
+&itemno=1
+&itemtype=Window
+&modtype=Impact Product
+&wintype=Horizontal Rolling Series
+&name=Eco window 105.75x25.75HRXOECOBB5.16C
+&image=http://localhost/AMCRMERP/htdocs/document.php?modulepart=product&attachment=0&file=36.75X50.375HRXOECOBB5.16C/36.75X50.375.png
+&color=white
+&cost_price=80
+&sales_price=100
+&sales_discount=0.10
+&inst_price=25
+&inst_discount=0.10
+&otherfees=15
+&finalprice=127.5
+&quantity=1
+
+### Create an estimate
+
+POST {{apiRoot}}/createEstimateLineItem.php
+Content-Type: application/x-www-form-urlencoded
+
+estimateid=54
+&itemno=2
+&itemtype=Hardware
+&modtype=Hardware
+&wintype=Horizontal Rolling Series
+&name=SATIN NICKEL CENTURY F58 & LAT F59 ACTIVE
+&image=http://localhost/AMCRMERP/htdocs/document.php?modulepart=product&entity=1&file=%2F619CENF58%26LATF59X%2F619CENF58%26LATF59.png
+&color=white
+&cost_price=80
+&sales_price=100
+&sales_discount=0.10
+&inst_price=25
+&inst_discount=0.10
+&otherfees=15
+&finalprice=127.5
+&quantity=1
+
+### Delete an estimate
+GET {{apiRoot}}/deleteEstimateLineItem.php?id=3
+
+### Update an estimate
+POST {{apiRoot}}/updateEstimateItem.php
+Content-Type: application/x-www-form-urlencoded
+
+id=2
+&estimateid=54
+&itemno=3
+&itemtype=Window
+&modtype=Impact Product
+&wintype=Horizontal Rolling Series
+&name=Eco window 105.75x25.75HRXOECOBB5.16C
+&image=http%3A%2F%2Flocalhost%2FAMCRMERP%2Fhtdocs%2Fdocument.php%3Fmodulepart%3Dproduct%26attachment%3D0%26file%3D36.75X50.375HRXOECOBB5.16C%2F36.75X50.375.png
+&color=white
+&cost_price=80
+&sales_price=100
+&sales_discount=0.10
+&inst_price=25
+&inst_discount=0.10
+&otherfees=15
+&finalprice=127.5
+&quantity=1
+
+
+### Copy an estimate
+POST {{apiRoot}}/copyEstimateItem.php
+Content-Type: application/x-www-form-urlencoded
+
+id=2
+
+###

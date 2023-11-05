@@ -1,0 +1,16 @@
+# This file contains contains HTTP requests for testing CRUD operations for estimations
+# Install the Visual Studio Code extension to use it: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+@apiRoot=http://localhost/AMCRMERP/htdocs/custom/amhpestimatesv2/db
+
+### fetch product summaries
+GET {{apiRoot}}/getproductsummaries.php
+
+
+### fetch a products details
+GET {{apiRoot}}/getproductdetails.php?id=621
+
+
+### fetch a products details
+GET {{apiRoot}}/getproductdetails.php?id=510
+
