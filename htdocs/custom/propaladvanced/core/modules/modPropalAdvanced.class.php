@@ -456,10 +456,10 @@ class modPropalAdvanced extends DolibarrModules
 		$colors = getColors();
 
 		// Exrtafields Propal
-		$result1 = $extrafields->addExtraField('estimateht', 'ESTIMATE + HT:', 'varchar', 1, 10, 'propal', 0,0,'8', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result2 = $extrafields->addExtraField('poht', 'PO + HT:', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvance@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result3 = $extrafields->addExtraField('color', "Color:", 'select',  1,  3, 'propal',   0, 1, '', array('options'=>$colors), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result4 = $extrafields->addExtraField('sqfeetprice', 'Sq. Feet Price:', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result1 = $extrafields->addExtraField('estimateht', 'ESTIMATE + HT:', 'varchar', 1, 10, 'propal', 0,0,'8', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result2 = $extrafields->addExtraField('poht', 'PO + HT:', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvance@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result3 = $extrafields->addExtraField('color', "Color:", 'select',  1,  3, 'propal',   0, 1, '', array('options'=>$colors), 1,'', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result4 = $extrafields->addExtraField('sqfeetprice', 'Sq. Feet Price:', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
 
 		// Extrafileds PropalDet
 
@@ -473,78 +473,78 @@ class modPropalAdvanced extends DolibarrModules
 		$locksizes = getLockSizes();
 
 
-		$result5 = $extrafields->addExtraField('product', "Product", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$product_type), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result6 = $extrafields->addExtraField('material', "Material", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$material_type), 1,'', 0, 0, '', '', 'propaladvance@propaladvance', 'isModEnabled("propaladvanced")');
-		$result7 = $extrafields->addExtraField('windowtype', "Window Type", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$windows_type), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result8 = $extrafields->addExtraField('color', "Color", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$colors), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result5 = $extrafields->addExtraField('product', "Product", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$product_type), 1,'', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result6 = $extrafields->addExtraField('material', "Material", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$material_type), 1,'', 1, 0, '', '', 'propaladvance@propaladvance', 'isModEnabled("propaladvanced")');
+		$result7 = $extrafields->addExtraField('windowtype', "Window Type", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$windows_type), 1,'', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result8 = $extrafields->addExtraField('color', "Color", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$colors), 1,'', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
 
 		$result9 = $extrafields->addExtraField('provider', "Provider", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>array('17'=>'ALL POINTS SCREW','14'=>'BEST PLY SUPPLIES','15'=>'EASTERN METAL SUPPLY', '7'=>'ECO WINDOW', '16'=>'EDDY MILLWORK', '2'=>'EMS HV 1', '5'=>'EMS HV 2', '6'=>'EMS Panels', '12'=>'ES WINDOWS', '20'=>'FLORIDA WATERPROOFING & GLAZING PRODUCTS', '4'=>'FS Panels', '3'=>'FS Performance 2', '10'=>'JB GARAGE DOORS', '19'=>'KUTDE', '11'=>'MILLWORK SALES', '9'=>'MR. GLASS', '13'=>'OCEAN LUMBER', '8'=>'PGT WINDOWS', '1'=>'RC AS 500', '18'=>'TIMEDSINGS')), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
 
 
-		$result10 = $extrafields->addExtraField('sqfeetprice', 'SQ, FEET PRICE', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result11 = $extrafields->addExtraField('instfee', 'INST FEE', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result12 = $extrafields->addExtraField('masopenw', 'MAS OPEN W', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result13 = $extrafields->addExtraField('masopenht', 'MAS OPEN HT', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result14 = $extrafields->addExtraField('estht', 'EST +HT', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result15 = $extrafields->addExtraField('trk', 'TRK', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result16 = $extrafields->addExtraField('masopenw', 'MAS OPEN W', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result17 = $extrafields->addExtraField('type', "TYPE", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$items_type), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result10 = $extrafields->addExtraField('sqfeetprice', 'SQ, FEET PRICE', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result11 = $extrafields->addExtraField('instfee', 'INST FEE', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result12 = $extrafields->addExtraField('masopenw', 'MAS OPEN W', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result13 = $extrafields->addExtraField('masopenht', 'MAS OPEN HT', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result14 = $extrafields->addExtraField('estht', 'EST +HT', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result15 = $extrafields->addExtraField('trk', 'TRK', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result16 = $extrafields->addExtraField('masopenw', 'MAS OPEN W', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result17 = $extrafields->addExtraField('type', "TYPE", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$items_type), 1,'', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
 		$result18 = $extrafields->addExtraField('uppersize', 'UPPER SIZE', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result19 = $extrafields->addExtraField('uppertype', "UPPER TYPE", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$items_type), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result20 = $extrafields->addExtraField('lowersize', 'UPPER SIZE', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result21 = $extrafields->addExtraField('lowertype', "UPPER TYPE", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$items_type), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result22 = $extrafields->addExtraField('mount', "MOUNT", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$mount), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result23 = $extrafields->addExtraField('bladeslong', 'BLADES LONG', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result24 = $extrafields->addExtraField('bladesqty', 'BLADES QTY', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result25 = $extrafields->addExtraField('angulartype', "ANGULAR TYPE", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$anugular_type), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result26 = $extrafields->addExtraField('bladeslong', 'ANGULAR SIZE', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result27 = $extrafields->addExtraField('bladeslong', 'ANGULAR QTY', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result28 = $extrafields->addExtraField('extraangtype', "EXTRA ANG TYPE", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$anugular_type), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result29 = $extrafields->addExtraField('extraanglong', 'EXTRA ANG LONG', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result30 = $extrafields->addExtraField('extraangqty', 'EXTRA ANG QTY', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result31 = $extrafields->addExtraField('tubestype', "TUBES TYPE", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$anugular_type), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result32 = $extrafields->addExtraField('tubessize', 'TUBES SIZE', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result33 = $extrafields->addExtraField('tubesqty', 'TUBES QTY', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result34 = $extrafields->addExtraField('left', 'LEFT', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result35 = $extrafields->addExtraField('right', 'RIGHT', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result36 = $extrafields->addExtraField('lockins', "LOCK INS", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$lock), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result37 = $extrafields->addExtraField('locksizes', "LOCK SIZES", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$locksizes), 1,'', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result38 = $extrafields->addExtraField('lnft', 'LN. FT', 'varchar', 34, 1, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result39 = $extrafields->addExtraField('totalsqfeet', 'TOTAL SQ FEET', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result19 = $extrafields->addExtraField('uppertype', "UPPER TYPE", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$items_type), 1,'', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result20 = $extrafields->addExtraField('lowersize', 'UPPER SIZE', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result21 = $extrafields->addExtraField('lowertype', "UPPER TYPE", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$items_type), 1,'', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result22 = $extrafields->addExtraField('mount', "MOUNT", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$mount), 1,'', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result23 = $extrafields->addExtraField('bladeslong', 'BLADES LONG', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result24 = $extrafields->addExtraField('bladesqty', 'BLADES QTY', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result25 = $extrafields->addExtraField('angulartype', "ANGULAR TYPE", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$anugular_type), 1,'', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result26 = $extrafields->addExtraField('bladeslong', 'ANGULAR SIZE', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result27 = $extrafields->addExtraField('bladeslong', 'ANGULAR QTY', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result28 = $extrafields->addExtraField('extraangtype', "EXTRA ANG TYPE", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$anugular_type), 1,'', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result29 = $extrafields->addExtraField('extraanglong', 'EXTRA ANG LONG', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result30 = $extrafields->addExtraField('extraangqty', 'EXTRA ANG QTY', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result31 = $extrafields->addExtraField('tubestype', "TUBES TYPE", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$anugular_type), 1,'', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result32 = $extrafields->addExtraField('tubessize', 'TUBES SIZE', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result33 = $extrafields->addExtraField('tubesqty', 'TUBES QTY', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result34 = $extrafields->addExtraField('left', 'LEFT', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 0, 1, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result35 = $extrafields->addExtraField('right', 'RIGHT', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result36 = $extrafields->addExtraField('lockins', "LOCK INS", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$lock), 1,'', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result37 = $extrafields->addExtraField('locksizes', "LOCK SIZES", 'select',  1,  3, 'propaldet',   0, 1, '', array('options'=>$locksizes), 1,'', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result38 = $extrafields->addExtraField('lnft', 'LN. FT', 'varchar', 34, 1, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result39 = $extrafields->addExtraField('totalsqfeet', 'TOTAL SQ FEET', 'varchar', 1, 10, 'propaldet', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
 
 		// Exrtafields Propal
 
-		$result40 = $extrafields->addExtraField('estimate', 'Estimate', 'text', 1, 255, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result41 = $extrafields->addExtraField('production', 'Production', 'text', 1, 255, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result42 = $extrafields->addExtraField('installation', 'Installation', 'text', 1, 255, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result40 = $extrafields->addExtraField('estimate', 'Estimate', 'text', 1, 255, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result41 = $extrafields->addExtraField('production', 'Production', 'text', 1, 255, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result42 = $extrafields->addExtraField('installation', 'Installation', 'text', 1, 255, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
 
-		$result43 = $extrafields->addExtraField('ordercompleted', 'Order completed', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result44 = $extrafields->addExtraField('signaturerequired', 'Signature Required', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result45 = $extrafields->addExtraField('ordercompleted', 'Order Completed', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result46 = $extrafields->addExtraField('remove50', 'Remove 50%', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result47 = $extrafields->addExtraField('installationtime', 'Installation Time', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result48 = $extrafields->addExtraField('customizedvalue', 'Customized Value $ (Taxable)', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result49 = $extrafields->addExtraField('otherfees', 'Other Fees $ (Non taxable)', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result50 = $extrafields->addExtraField('permit', 'Permit $ (Non taxable)', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result51 = $extrafields->addExtraField('installationnontaxable', 'Installation $ (Non Taxable)', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result52 = $extrafields->addExtraField('totalsquarefeet', 'Total Square Feet', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result53 = $extrafields->addExtraField('discount', 'Discount $', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result54 = $extrafields->addExtraField('salestax', 'Sales Tax $', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result55 = $extrafields->addExtraField('salesprice', 'Sales Price $', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result56 = $extrafields->addExtraField('totaltrackfeet', 'Total Track Feet', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result57 = $extrafields->addExtraField('totallongfeet', 'Total Long Feet', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result58 = $extrafields->addExtraField('tapcons', 'Tapcons', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result59 = $extrafields->addExtraField('fasterners', 'Fasterners', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result60 = $extrafields->addExtraField('totalsqfeet', 'Total SQ. Feet', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result61 = $extrafields->addExtraField('totallinearft', 'Total Linear FT', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result62 = $extrafields->addExtraField('sqrfeetinstprice', 'Sqr Feet Inst Price $', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result63 = $extrafields->addExtraField('totalinstprice', 'Total Inst Price', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result64 = $extrafields->addExtraField('yearswarranty', 'Years Warranty', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result65 = $extrafields->addExtraField('yearswarrantyqty', 'Years Warranty qty', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result66 = $extrafields->addExtraField('lifetimewarranty', 'Life Time Warranty', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result67 = $extrafields->addExtraField('yearsmaintenace', '10 Years maintenance', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result68 = $extrafields->addExtraField('freeopeningclosing', 'Free Opening and Closing', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
-		$result69 = $extrafields->addExtraField('nopayments', 'No Payments', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 0, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result43 = $extrafields->addExtraField('ordercompleted', 'Order completed', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result44 = $extrafields->addExtraField('signaturerequired', 'Signature Required', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result45 = $extrafields->addExtraField('ordercompleted', 'Order Completed', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result46 = $extrafields->addExtraField('remove50', 'Remove 50%', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result47 = $extrafields->addExtraField('installationtime', 'Installation Time', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result48 = $extrafields->addExtraField('customizedvalue', 'Customized Value $ (Taxable)', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result49 = $extrafields->addExtraField('otherfees', 'Other Fees $ (Non taxable)', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result50 = $extrafields->addExtraField('permit', 'Permit $ (Non taxable)', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result51 = $extrafields->addExtraField('installationnontaxable', 'Installation $ (Non Taxable)', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result52 = $extrafields->addExtraField('totalsquarefeet', 'Total Square Feet', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result53 = $extrafields->addExtraField('discount', 'Discount $', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result54 = $extrafields->addExtraField('salestax', 'Sales Tax $', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result55 = $extrafields->addExtraField('salesprice', 'Sales Price $', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result56 = $extrafields->addExtraField('totaltrackfeet', 'Total Track Feet', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result57 = $extrafields->addExtraField('totallongfeet', 'Total Long Feet', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result58 = $extrafields->addExtraField('tapcons', 'Tapcons', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result59 = $extrafields->addExtraField('fasterners', 'Fasterners', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result60 = $extrafields->addExtraField('totalsqfeet', 'Total SQ. Feet', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result61 = $extrafields->addExtraField('totallinearft', 'Total Linear FT', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result62 = $extrafields->addExtraField('sqrfeetinstprice', 'Sqr Feet Inst Price $', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result63 = $extrafields->addExtraField('totalinstprice', 'Total Inst Price', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result64 = $extrafields->addExtraField('yearswarranty', 'Years Warranty', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result65 = $extrafields->addExtraField('yearswarrantyqty', 'Years Warranty qty', 'varchar', 1, 10, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result66 = $extrafields->addExtraField('lifetimewarranty', 'Life Time Warranty', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result67 = $extrafields->addExtraField('yearsmaintenace', '10 Years maintenance', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result68 = $extrafields->addExtraField('freeopeningclosing', 'Free Opening and Closing', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
+		$result69 = $extrafields->addExtraField('nopayments', 'No Payments', 'boolean', 1, 3, 'propal', 0,0,'', '', 1, '', 1, 0, '', '', 'propaladvanced@propaladvanced', 'isModEnabled("propaladvanced")');
 
 		// Permissions
 		$this->remove($options);
